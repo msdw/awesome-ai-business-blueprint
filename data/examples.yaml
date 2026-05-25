@@ -84,3 +84,428 @@ examples:
       - marketing_ai
     source: public
     status: accepted
+
+  - id: ai_rfp_response_assistant
+    name: AI RFP Response Assistant
+    description: >
+      A tool or internal service that helps B2B sales and pre-sales teams draft
+      answers to RFP questions by retrieving relevant content from previous proposals,
+      product documentation, and approved company knowledge.
+    category: ai_saas
+    industries:
+      - software_dev
+      - consulting
+    target_users:
+      - b2b_sales_rep
+      - pre_sales_engineer
+    blueprint_stage_relevance:
+      - step_01
+      - step_04
+      - step_06
+    business_model: subscription_saas
+    outcome: >
+      Products such as Loopio and RFPIO (now Responsive) have built substantial recurring
+      revenue in this category. Implementation packages targeting mid-market firms
+      are also viable. First pilots typically reduce RFP response time by 40-60%
+      according to public customer testimonials.
+    lessons:
+      - Human review before submission is non-negotiable — AI drafts reduce effort, not accountability
+      - Source citations in answers increase buyer trust significantly
+      - Start with a RAG-over-existing-proposals approach before building custom fine-tuning
+    compliance_notes: >
+      RFP documents often contain confidential procurement information.
+      Ensure data is not shared with external model providers without a DPA.
+      Add access controls by document sensitivity.
+    scoring:
+      pain_intensity: 9
+      willingness_to_pay: 8
+      ai_fit: 9
+      implementation_complexity: 5
+      distribution_difficulty: 4
+      compliance_risk: 4
+      operational_complexity: 4
+      differentiation_potential: 6
+    tags:
+      - rag
+      - b2b_sales
+      - document_generation
+    source: public
+    status: accepted
+
+  - id: ai_support_agent_smbs
+    name: AI Customer Support Agent for SMBs
+    description: >
+      A configurable AI support agent that handles tier-1 customer questions for
+      small and medium businesses, trained on the company's product documentation,
+      FAQs, and past support tickets.
+    category: ai_saas
+    industries:
+      - e_commerce
+      - software_dev
+      - services
+    target_users:
+      - small_business_owner
+      - support_manager
+    blueprint_stage_relevance:
+      - step_01
+      - step_05
+      - step_07
+    business_model: subscription_saas
+    outcome: >
+      Platforms such as Intercom and Freshdesk have added AI tiers in this space.
+      Indie implementations targeting a single vertical (e.g., Shopify stores or
+      SaaS help desks) have found product-market fit at $99-299 per month.
+      Typical deflection rate of 40-70% of tier-1 tickets reported in public case studies.
+    lessons:
+      - Niche verticals (e.g., restaurant SaaS, e-commerce) convert better than horizontal positioning
+      - Human escalation path must be visible and functional before launch
+      - Training on real tickets, not only documentation, significantly improves response quality
+    compliance_notes: >
+      Customer support data may contain personal information.
+      Ensure GDPR/CCPA compliance for data storage and retention.
+      Disclose AI involvement to end users where required by applicable law.
+    scoring:
+      pain_intensity: 8
+      willingness_to_pay: 7
+      ai_fit: 9
+      implementation_complexity: 5
+      distribution_difficulty: 4
+      compliance_risk: 4
+      operational_complexity: 4
+      differentiation_potential: 5
+    tags:
+      - customer_support
+      - automation
+      - smb
+    source: public
+    status: accepted
+
+  - id: ai_internal_knowledge_base
+    name: AI Internal Knowledge Base Assistant
+    description: >
+      An internal search and Q&A assistant that allows employees to query company
+      documentation, policies, wikis, and past project outputs using natural language.
+      Built on RAG over the organization's existing knowledge repositories.
+    category: ai_services
+    industries:
+      - consulting
+      - software_dev
+      - operations
+    target_users:
+      - operations_manager
+      - knowledge_manager
+      - hr_manager
+    blueprint_stage_relevance:
+      - step_04
+      - step_06
+      - step_08
+    business_model: implementation_package
+    outcome: >
+      Multiple documented implementations show 20-40% reduction in time spent
+      searching for internal information. Implementation packages for mid-market
+      firms typically range from 5,000 to 25,000 EUR depending on document volume
+      and integration complexity.
+    lessons:
+      - Data quality and document freshness are the primary determinants of output quality
+      - Source citations with links are essential for user trust
+      - Start with one department's documentation before expanding company-wide
+    compliance_notes: >
+      Internal documents may contain confidential, personal, or legally privileged information.
+      Restrict access by role and department.
+      Audit logs are recommended for compliance-sensitive organizations.
+    scoring:
+      pain_intensity: 8
+      willingness_to_pay: 7
+      ai_fit: 9
+      implementation_complexity: 5
+      distribution_difficulty: 5
+      compliance_risk: 5
+      operational_complexity: 4
+      differentiation_potential: 5
+    tags:
+      - rag
+      - internal_tools
+      - knowledge_management
+    source: public
+    status: accepted
+
+  - id: ai_meeting_followup_service
+    name: AI Meeting Follow-up Service for Consultants
+    description: >
+      A productized service that takes meeting recordings or transcripts and
+      automatically generates structured meeting summaries, action items, and
+      follow-up email drafts for consultants and professional services teams.
+    category: ai_services
+    industries:
+      - consulting
+      - professional_services
+    target_users:
+      - consultant
+      - project_manager
+    blueprint_stage_relevance:
+      - step_06
+      - step_09
+      - step_12
+    business_model: productized_service
+    outcome: >
+      Tools such as Otter.ai, Fireflies, and Notion AI have expanded into this space.
+      Productized service versions targeting consulting firms charge 200-800 EUR per
+      month per team. Consultants report saving 1-2 hours per meeting on follow-up tasks.
+    lessons:
+      - Meeting notes are most valuable when delivered within 30 minutes of the meeting ending
+      - Action item extraction accuracy improves significantly with domain-specific prompting
+      - A simple email draft reduces the final editing burden more than a summary alone
+    compliance_notes: null
+    scoring:
+      pain_intensity: 8
+      willingness_to_pay: 7
+      ai_fit: 8
+      implementation_complexity: 3
+      distribution_difficulty: 4
+      compliance_risk: 2
+      operational_complexity: 3
+      differentiation_potential: 4
+    tags:
+      - transcription
+      - summarization
+      - productivity
+    source: public
+    status: accepted
+
+  - id: ai_local_seo_package
+    name: AI Local SEO Package for Small Businesses
+    description: >
+      A productized service that helps local businesses improve their Google presence
+      by generating optimized Google Business Profile posts, local landing page content,
+      review response templates, and FAQ schema markup using AI.
+    category: ai_services
+    industries:
+      - marketing
+      - local_services
+    target_users:
+      - local_business_owner
+      - marketing_agency
+    blueprint_stage_relevance:
+      - step_05
+      - step_06
+      - step_10
+    business_model: productized_service
+    outcome: >
+      Local marketing agencies offering AI-assisted content packages report
+      delivering 4-6x more content per client than traditional methods.
+      Monthly retainers for local SEO packages typically range from 300 to 1,500 EUR.
+    lessons:
+      - Local specificity (neighborhood names, local landmarks) dramatically improves SEO impact
+      - Business owners need to review and approve AI content before publishing
+      - Bundling Google Business Profile management with content creation reduces churn
+    compliance_notes: null
+    scoring:
+      pain_intensity: 7
+      willingness_to_pay: 6
+      ai_fit: 7
+      implementation_complexity: 2
+      distribution_difficulty: 5
+      compliance_risk: 1
+      operational_complexity: 3
+      differentiation_potential: 3
+    tags:
+      - content_creation
+      - local_seo
+      - small_business
+    source: public
+    status: accepted
+
+  - id: ai_weekly_reporting_automation
+    name: AI Weekly Reporting Automation
+    description: >
+      An automated pipeline that pulls data from business tools (CRM, analytics,
+      finance), generates structured narrative summaries of key metrics, and
+      distributes weekly business reports to leadership teams.
+    category: ai_services
+    industries:
+      - operations
+      - finance
+      - software_dev
+    target_users:
+      - operations_manager
+      - startup_founder
+      - finance_manager
+    blueprint_stage_relevance:
+      - step_04
+      - step_07
+      - step_12
+    business_model: productized_service
+    outcome: >
+      Automation of weekly reporting has been documented at companies of all sizes.
+      Productized implementations for SMBs and scale-ups charge 500-2,000 EUR per month.
+      Typical time savings: 3-6 hours per week of analyst or founder time.
+    lessons:
+      - Data connectivity (API access to tools) is the primary implementation challenge
+      - Narrative framing of metrics is more useful to leadership than raw numbers
+      - Anomaly detection and flagging of week-over-week changes adds significant value
+    compliance_notes: >
+      Financial and operational data may be commercially sensitive.
+      Ensure data is not shared externally without appropriate controls.
+    scoring:
+      pain_intensity: 7
+      willingness_to_pay: 7
+      ai_fit: 7
+      implementation_complexity: 5
+      distribution_difficulty: 4
+      compliance_risk: 3
+      operational_complexity: 4
+      differentiation_potential: 5
+    tags:
+      - automation
+      - reporting
+      - data_enrichment
+    source: public
+    status: accepted
+
+  - id: ai_contract_review_copilot
+    name: AI Contract Review Copilot
+    description: >
+      A tool that assists legal and procurement teams in reviewing contracts by
+      flagging unusual clauses, summarizing key terms, comparing against standard
+      templates, and highlighting potential risks — with human review before any action.
+    category: ai_saas
+    industries:
+      - legal
+      - finance
+      - operations
+    target_users:
+      - legal_counsel
+      - procurement_manager
+      - startup_founder
+    blueprint_stage_relevance:
+      - step_04
+      - step_06
+      - step_13
+    business_model: subscription_saas
+    outcome: >
+      Products such as Luminance, Ironclad, and SpotDraft operate in this space.
+      Smaller implementations targeting a specific contract type (e.g., NDAs, vendor
+      agreements) have found early traction. Review time per contract is typically
+      reduced by 50-70% for standard agreement types.
+    lessons:
+      - Scope to one contract type at launch rather than covering all contract types
+      - Human review by a qualified professional is mandatory — this is a high-stakes domain
+      - Clause extraction accuracy must be high before entering production use
+    compliance_notes: >
+      Legal document processing involves legally privileged and commercially sensitive content.
+      This use case may involve regulated or high-stakes decisions. Human review,
+      compliance assessment, security controls, privacy review, and domain expertise
+      are required before production use.
+      Do not present AI output as legal advice.
+    scoring:
+      pain_intensity: 8
+      willingness_to_pay: 8
+      ai_fit: 8
+      implementation_complexity: 6
+      distribution_difficulty: 5
+      compliance_risk: 8
+      operational_complexity: 5
+      differentiation_potential: 6
+    tags:
+      - legal
+      - document_extraction
+      - risk_management
+    source: public
+    status: accepted
+
+  - id: ai_sales_research_agent
+    name: AI Sales Research Agent
+    description: >
+      An agent that automates prospect research for B2B sales teams by aggregating
+      public information about target companies and contacts (news, LinkedIn, filings,
+      job posts) and generating structured briefing notes before sales calls.
+    category: ai_saas
+    industries:
+      - software_dev
+      - consulting
+      - professional_services
+    target_users:
+      - b2b_sales_rep
+      - account_executive
+      - sales_manager
+    blueprint_stage_relevance:
+      - step_04
+      - step_07
+      - step_10
+    business_model: subscription_saas
+    outcome: >
+      Tools such as Clay, Apollo, and Salesforce Einstein operate adjacent to this space.
+      Focused sales research agents for specific industries charge 50-200 EUR per seat
+      per month. Sales teams report saving 30-60 minutes per prospect on manual research.
+    lessons:
+      - Industry-specific signal detection (e.g., funding events, leadership changes) increases value
+      - Output quality is gated by data source quality and freshness
+      - Integration with CRM (Salesforce, HubSpot) is required for enterprise adoption
+    compliance_notes: >
+      Aggregating personal information about individuals may be subject to GDPR
+      and similar privacy regulations depending on geography and data sources.
+      Verify that data sources comply with applicable terms of service.
+    scoring:
+      pain_intensity: 8
+      willingness_to_pay: 7
+      ai_fit: 8
+      implementation_complexity: 5
+      distribution_difficulty: 4
+      compliance_risk: 5
+      operational_complexity: 4
+      differentiation_potential: 6
+    tags:
+      - sales_automation
+      - data_enrichment
+      - b2b_sales
+    source: public
+    status: accepted
+
+  - id: ai_customer_feedback_analysis
+    name: AI Customer Feedback Analysis Service
+    description: >
+      A service that processes customer feedback from surveys, support tickets,
+      reviews, and NPS responses using AI to identify recurring themes, sentiment
+      patterns, and actionable product or service improvement signals.
+    category: ai_services
+    industries:
+      - software_dev
+      - e_commerce
+      - services
+    target_users:
+      - product_manager
+      - customer_success_manager
+      - startup_founder
+    blueprint_stage_relevance:
+      - step_04
+      - step_14
+      - step_15
+    business_model: productized_service
+    outcome: >
+      Products such as Dovetail, Productboard, and Thematic operate in adjacent spaces.
+      Productized analysis services for early-stage companies charge 500-2,500 EUR per
+      engagement or per month. Common output: a structured insight report with top
+      5 themes, representative quotes, and recommended product actions.
+    lessons:
+      - Verbatim customer quotes are more persuasive to product teams than summaries alone
+      - Combining multiple feedback channels (NPS + support + reviews) increases signal quality
+      - Monthly cadence reports are easier to sell than one-time analyses
+    compliance_notes: >
+      Customer feedback may contain personal information and sensitive complaints.
+      Anonymize data before processing where possible.
+      Ensure data processing agreements are in place for SaaS customer data.
+    scoring:
+      pain_intensity: 7
+      willingness_to_pay: 7
+      ai_fit: 8
+      implementation_complexity: 4
+      distribution_difficulty: 4
+      compliance_risk: 3
+      operational_complexity: 3
+      differentiation_potential: 5
+    tags:
+      - customer_feedback
+      - text_analysis
+      - product_management
+    source: public
+    status: accepted
