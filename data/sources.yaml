@@ -1,0 +1,21 @@
+sources:
+  github_trending:
+    type: github
+    description: GitHub trending AI business tools
+    frequency: weekly
+
+  hacker_news:
+    type: hn
+    description: HN threads about AI business building
+    frequency: weekly
+
+  indie_hackers:
+    type: web
+    description: Indie Hackers interviews and revenue stories
+    url: https://www.indiehackers.com
+    frequency: weekly
+
+  producthunt:
+    type: producthunt
+    description: Product Hunt AI business launches
+    frequency: weekly

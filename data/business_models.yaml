@@ -1,0 +1,44 @@
+business_models:
+  - id: subscription_saas
+    label: Subscription SaaS
+    description: Recurring monthly or annual subscription
+
+  - id: usage_based
+    label: Usage-based
+    description: Pay-per-use or consumption-based pricing
+
+  - id: freemium
+    label: Freemium
+    description: Free tier + paid upgrade
+
+  - id: consulting_retainer
+    label: Consulting Retainer
+    description: Monthly retainer for ongoing services
+
+  - id: project_fee
+    label: Project Fee
+    description: Fixed price for defined scope
+
+  - id: productized_service
+    label: Productized Service
+    description: Fixed-scope, repeatable service delivery
+
+  - id: done_for_you
+    label: Done-for-You (DFY)
+    description: Full delivery on behalf of client
+
+  - id: training_workshop
+    label: Training & Workshop
+    description: Live or recorded training
+
+  - id: licensing
+    label: Licensing
+    description: License to use IP or software
+
+  - id: marketplace
+    label: Marketplace
+    description: Transaction fee on platform activity
+
+  - id: audit
+    label: Audit & Assessment
+    description: One-time diagnostic deliverable

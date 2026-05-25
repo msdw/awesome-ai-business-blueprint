@@ -1,0 +1,307 @@
+# The 15-step AI business blueprint
+blueprint_steps:
+  - id: step_01
+    order: 1
+    title: Problem Identification
+    file: blueprint/01-problem-identification.md
+    objective: Identify a specific, painful, and observable problem worth solving with AI.
+    key_questions:
+      - Who has this problem and how frequently?
+      - How are they solving it today?
+      - What would they pay to have it solved?
+      - Is AI a good fit for this problem?
+    deliverables:
+      - Problem statement (one paragraph)
+      - Target user profile (3-5 bullet points)
+      - Evidence of the problem (at least 3 sources)
+    templates:
+      - templates/problem-statement.md
+    common_mistakes:
+      - Defining the problem too broadly ("businesses need AI")
+      - Skipping evidence gathering
+      - Picking a problem based on what you can build, not what users need
+
+  - id: step_02
+    order: 2
+    title: Market Validation
+    file: blueprint/02-market-validation.md
+    objective: Verify that a sufficient number of paying buyers exist before building.
+    key_questions:
+      - How many potential buyers exist?
+      - Is the market growing or shrinking?
+      - Who are the existing competitors and what is their traction?
+      - What is the realistic addressable market for a solo or small team?
+    deliverables:
+      - Market size estimate with source
+      - Competitor map (3-5 competitors with notes)
+      - Market signal evidence (job boards, search volume, Reddit threads)
+    templates:
+      - templates/market-research.md
+    common_mistakes:
+      - Using TAM/SAM/SOM without realistic reachability analysis
+      - Ignoring strong competitors as validation (they prove demand)
+      - Confusing a large market with an accessible market
+
+  - id: step_03
+    order: 3
+    title: Customer Discovery
+    file: blueprint/03-customer-discovery.md
+    objective: Talk directly to potential customers to validate pain depth and willingness to pay.
+    key_questions:
+      - What is their current workflow for this problem?
+      - How much time or money does this problem cost them?
+      - What have they tried? Why did it fail?
+      - Would they pay for a solution? How much?
+    deliverables:
+      - 5-10 customer interview notes
+      - Key insight summary (top 3 pain themes)
+      - Revised problem statement based on interviews
+    templates:
+      - templates/customer-interview.md
+    common_mistakes:
+      - Asking "would you use this?" instead of "tell me about the last time you had this problem"
+      - Only talking to friends who say yes
+      - Skipping this step entirely
+
+  - id: step_04
+    order: 4
+    title: AI Use Case Design
+    file: blueprint/04-ai-use-case-design.md
+    objective: Define specifically what the AI does in the solution and why AI is the right tool.
+    key_questions:
+      - What AI task is being performed? (classify, generate, extract, search, etc.)
+      - Why is AI better than a rule-based or manual solution?
+      - What data does the AI need?
+      - What are the failure modes and how are they handled?
+    deliverables:
+      - AI use case description (input → AI task → output)
+      - Data requirements
+      - Failure mode analysis
+    templates:
+      - templates/ai-use-case-design.md
+    common_mistakes:
+      - Using AI where a simpler rule-based system would work better
+      - Not defining what "good output" looks like
+      - Ignoring hallucination and error handling
+
+  - id: step_05
+    order: 5
+    title: Business Model Selection
+    file: blueprint/05-business-model-selection.md
+    objective: Choose the monetization model that fits the value delivered and the buyer context.
+    key_questions:
+      - How does the buyer measure value from this solution?
+      - What pricing model are they familiar with in adjacent products?
+      - What is the cost to deliver relative to the price?
+      - What model allows for fast revenue and iteration?
+    deliverables:
+      - Selected business model with rationale
+      - Pricing hypothesis (range, not exact number)
+      - Unit economics sketch
+    templates:
+      - templates/business-model.md
+    common_mistakes:
+      - Defaulting to SaaS because it scales, without testing buyer willingness
+      - Setting prices too low to be taken seriously
+      - Choosing a model that requires too much trust before first payment
+
+  - id: step_06
+    order: 6
+    title: Offer Design
+    file: blueprint/06-offer-design.md
+    objective: Define exactly what the customer buys — scope, deliverables, format, and price.
+    key_questions:
+      - What is explicitly included and excluded?
+      - What does success look like from the buyer's perspective?
+      - How is value communicated in the offer description?
+      - What are the three pricing tiers or options?
+    deliverables:
+      - Offer one-pager (what, who, why, how, price)
+      - Scope definition (included / excluded)
+      - Pricing tiers (if applicable)
+    templates:
+      - templates/offer-design.md
+    common_mistakes:
+      - Offers that are too broad or vague
+      - Not defining what is NOT included
+      - Copying competitor pricing without understanding your cost structure
+
+  - id: step_07
+    order: 7
+    title: MVP Planning
+    file: blueprint/07-mvp-planning.md
+    objective: Define the smallest testable version that delivers core value to one real customer.
+    key_questions:
+      - What is the single most important thing the MVP must do?
+      - What can be done manually in v0 to test before automating?
+      - What is the target user experience for the first 5 minutes?
+      - What does success look like for the MVP?
+    deliverables:
+      - MVP feature list (max 3 core features)
+      - Manual concierge plan (what you will do by hand)
+      - MVP success criteria
+    templates:
+      - templates/mvp-spec.md
+    common_mistakes:
+      - Building too much before talking to users
+      - Automating before validating manually
+      - Not defining done criteria for the MVP
+
+  - id: step_08
+    order: 8
+    title: Technical Stack
+    file: blueprint/08-technical-stack.md
+    objective: Choose the simplest technical stack that ships the MVP in the target timeframe.
+    key_questions:
+      - What LLM/AI API fits the use case and budget?
+      - What is the hosting and deployment strategy?
+      - What is the data storage approach?
+      - What third-party integrations are required?
+    deliverables:
+      - Tech stack decision (with rationale)
+      - Architecture diagram (simple box diagram)
+      - Cost estimate at 100 users
+    templates:
+      - templates/tech-stack.md
+    common_mistakes:
+      - Over-engineering the stack before validating demand
+      - Choosing unfamiliar technologies to learn while building
+      - Not estimating LLM API costs at scale
+
+  - id: step_09
+    order: 9
+    title: Pricing Strategy
+    file: blueprint/09-pricing-strategy.md
+    objective: Set a pricing strategy grounded in value delivered and buyer context.
+    key_questions:
+      - What is the ROI for the buyer at the proposed price?
+      - What are comparable products priced at?
+      - What price signals commitment and quality?
+      - How will price increase as the product matures?
+    deliverables:
+      - Pricing decision with rationale
+      - Pricing page draft
+      - Revenue model at different scale assumptions
+    templates:
+      - templates/pricing.md
+    common_mistakes:
+      - Underpricing to get initial users
+      - Charging per seat without testing value-based alternatives
+      - Not building in price increase milestones
+
+  - id: step_10
+    order: 10
+    title: Go-to-Market
+    file: blueprint/10-go-to-market.md
+    objective: Define the channel, message, and sequence for reaching the first 10 paying customers.
+    key_questions:
+      - Where do target buyers spend their time online and offline?
+      - What message resonates based on customer discovery interviews?
+      - What is the outreach sequence for the first 30 days?
+      - What is the conversion path from stranger to paying customer?
+    deliverables:
+      - GTM plan (channel, message, timeline)
+      - Outreach sequence (email/LinkedIn/community)
+      - Target of 10 customers in 60 days
+    templates:
+      - templates/gtm.md
+    common_mistakes:
+      - Building a product without a go-to-market plan
+      - Relying on Product Hunt launch as primary GTM
+      - Not being specific enough about the outreach channel
+
+  - id: step_11
+    order: 11
+    title: Distribution Channels
+    file: blueprint/11-distribution-channels.md
+    objective: Identify and prioritize the channels that will drive sustainable customer acquisition.
+    key_questions:
+      - Which channels work for this buyer type and price point?
+      - What is the cost and time to first customer for each channel?
+      - Which channel can scale without proportional cost increase?
+    deliverables:
+      - Channel priority list (top 3 with rationale)
+      - Channel experiment plan (1 test per channel)
+    common_mistakes:
+      - Spreading too thin across channels before finding one that works
+      - Ignoring outbound for high-ACV B2B products
+      - Content marketing as primary channel without 6+ month runway
+
+  - id: step_12
+    order: 12
+    title: Delivery and Operations
+    file: blueprint/12-delivery-operations.md
+    objective: Define how the service or product is delivered reliably and profitably.
+    key_questions:
+      - What is the delivery process step by step?
+      - What can be automated vs. what requires human oversight?
+      - What are the quality gates?
+      - What is the cost of delivery per customer?
+    deliverables:
+      - Delivery process flowchart
+      - Quality checklist
+      - Cost per delivery calculation
+    templates:
+      - templates/delivery-checklist.md
+    common_mistakes:
+      - Not defining quality standards before scaling
+      - Under-pricing because delivery costs were not calculated
+      - No human review step for AI outputs in high-stakes contexts
+
+  - id: step_13
+    order: 13
+    title: Risk and Compliance
+    file: blueprint/13-risk-compliance.md
+    objective: Identify and mitigate key risks before they become blockers or liabilities.
+    key_questions:
+      - What are the top 3 technical risks?
+      - What are the top 3 market risks?
+      - Are there compliance or regulatory requirements?
+      - What happens if the primary LLM API changes pricing or terms?
+    deliverables:
+      - Risk register (top 10 risks with mitigation)
+      - Compliance checklist (if applicable)
+    templates:
+      - templates/risk-assessment.md
+    common_mistakes:
+      - Deploying in regulated domains without legal review
+      - No contingency plan for API price increases
+      - Not monitoring AI output quality in production
+
+  - id: step_14
+    order: 14
+    title: Growth and Iteration
+    file: blueprint/14-growth-iteration.md
+    objective: Establish the feedback loop and metrics to improve the product and grow revenue.
+    key_questions:
+      - What is the one metric that indicates product health?
+      - What is the retention metric and current baseline?
+      - What is the weekly iteration cycle?
+      - What channels are showing signals worth doubling down on?
+    deliverables:
+      - Dashboard with 3-5 key metrics
+      - Weekly review process
+      - Iteration backlog (top 3 priorities from user feedback)
+    common_mistakes:
+      - Tracking too many metrics without one north star
+      - Optimizing for acquisition before fixing retention
+      - No process for collecting and acting on user feedback
+
+  - id: step_15
+    order: 15
+    title: Scaling
+    file: blueprint/15-scaling.md
+    objective: Identify the right moment and approach to scale, without scaling prematurely.
+    key_questions:
+      - What signals indicate product-market fit before scaling?
+      - What is the unit economics target before raising or hiring?
+      - What are the bottlenecks to growth?
+      - What does scaling look like for this specific business model?
+    deliverables:
+      - PMF assessment checklist
+      - Scaling readiness scorecard
+      - Growth plan (next 12 months)
+    common_mistakes:
+      - Scaling channels before fixing retention
+      - Hiring before validating repeatable sales
+      - Raising money before reaching default alive

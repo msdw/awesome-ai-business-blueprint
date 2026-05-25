@@ -1,0 +1,30 @@
+customer_segments:
+  - id: indie_builder
+    label: Indie Builder / Solopreneur
+
+  - id: freelancer
+    label: Freelancer
+
+  - id: smb_owner
+    label: SMB Owner (1-50 employees)
+
+  - id: mid_market
+    label: Mid-market Company (50-500 employees)
+
+  - id: enterprise
+    label: Enterprise (500+ employees)
+
+  - id: startup
+    label: Early-stage Startup
+
+  - id: agency
+    label: Agency
+
+  - id: consultant
+    label: Consultant / Advisor
+
+  - id: nonprofit
+    label: Nonprofit / NGO
+
+  - id: government
+    label: Government / Public Sector

@@ -1,0 +1,30 @@
+# Curated resources for AI business builders
+resources:
+  - id: mom_test
+    title: The Mom Test
+    author: Rob Fitzpatrick
+    type: book
+    description: How to talk to customers and learn if your business is a good idea when everyone is lying to you
+    blueprint_stage: step_03
+    url: https://www.momtestbook.com
+
+  - id: lean_startup
+    title: The Lean Startup
+    author: Eric Ries
+    type: book
+    description: Build-measure-learn feedback loop for product development
+    blueprint_stage: step_07
+
+  - id: running_lean
+    title: Running Lean
+    author: Ash Maurya
+    type: book
+    description: Iterate from plan A to a plan that works
+    blueprint_stage: step_02
+
+  - id: obviously_awesome
+    title: Obviously Awesome
+    author: April Dunford
+    type: book
+    description: How to nail product positioning
+    blueprint_stage: step_06

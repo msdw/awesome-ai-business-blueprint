@@ -1,0 +1,40 @@
+channels:
+  - id: cold_outreach
+    label: Cold Outreach
+    type: outbound
+
+  - id: content_marketing
+    label: Content Marketing / SEO
+    type: inbound
+
+  - id: community
+    label: Community Building
+    type: inbound
+
+  - id: product_led
+    label: Product-Led Growth
+    type: inbound
+
+  - id: partnerships
+    label: Partnerships & Integrations
+    type: partnership
+
+  - id: events
+    label: Events & Conferences
+    type: outbound
+
+  - id: referrals
+    label: Referrals & Word of Mouth
+    type: inbound
+
+  - id: marketplace
+    label: Marketplace Listing
+    type: distribution
+
+  - id: paid_ads
+    label: Paid Advertising
+    type: outbound
+
+  - id: agency_channel
+    label: Agency / Reseller Channel
+    type: partnership

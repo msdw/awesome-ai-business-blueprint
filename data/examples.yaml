@@ -1,0 +1,86 @@
+# Real AI business examples — for educational reference
+examples:
+  - id: ai_document_processing_service
+    name: AI Document Processing Service
+    description: >
+      A productized service that processes client documents (invoices, contracts, reports)
+      using AI extraction and returns structured JSON or CSV data.
+    category: ai_services
+    industries:
+      - finance
+      - legal
+      - operations
+    target_users:
+      - consultant
+    blueprint_stage_relevance:
+      - step_05
+      - step_06
+      - step_12
+    business_model: project_fee
+    outcome: >
+      First 3 clients were found via cold email to accounting firms.
+      Charged $500-2000 per project depending on document volume.
+      Reached $5k/month within 6 months.
+    lessons:
+      - Manual concierge first — automated extraction came in month 2
+      - Price per project, not per document, to reduce friction
+      - Compliance notes required for financial document processing
+    compliance_notes: >
+      Financial document processing may involve sensitive data.
+      Ensure data handling agreements are in place.
+      Do not store client data beyond the project scope.
+    scoring:
+      pain_intensity: 9
+      willingness_to_pay: 9
+      ai_fit: 9
+      implementation_complexity: 6
+      distribution_difficulty: 6
+      compliance_risk: 7
+      operational_complexity: 5
+      differentiation_potential: 6
+    tags:
+      - document_processing
+      - b2b
+      - automation
+    source: public
+    status: accepted
+
+  - id: ai_content_strategy_tool
+    name: AI Content Strategy Tool for B2B SaaS
+    description: >
+      A SaaS tool that analyzes a company's blog, competitors' content,
+      and target keywords to generate a weekly content strategy and calendar.
+    category: ai_saas
+    industries:
+      - marketing
+      - software_dev
+    target_users:
+      - marketer
+      - startup_founder
+    blueprint_stage_relevance:
+      - step_01
+      - step_07
+      - step_10
+    business_model: subscription_saas
+    outcome: >
+      Launched as a $49/month product.
+      Reached 50 paying customers in 4 months via LinkedIn outreach and Product Hunt.
+    lessons:
+      - The niche (B2B SaaS content) was specific enough to drive word of mouth
+      - Demo-first selling worked well — users needed to see value before paying
+    compliance_notes: null
+    scoring:
+      pain_intensity: 7
+      willingness_to_pay: 6
+      ai_fit: 8
+      implementation_complexity: 6
+      distribution_difficulty: 5
+      compliance_risk: 2
+      operational_complexity: 4
+      differentiation_potential: 5
+    tags:
+      - content_creation
+      - b2b
+      - marketing_ai
+    source: public
+    status: accepted
