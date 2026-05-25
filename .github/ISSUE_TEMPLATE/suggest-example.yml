@@ -1,0 +1,73 @@
+name: Suggest an Example
+description: Propose a real AI business example for the blueprint
+title: "[EXAMPLE] "
+labels: ["needs-review"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Business / product name
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: URL (if public)
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What does it do?
+    validations:
+      required: true
+
+  - type: input
+    id: target_users
+    attributes:
+      label: Target users / customers
+    validations:
+      required: true
+
+  - type: dropdown
+    id: blueprint_stage
+    attributes:
+      label: Most relevant blueprint stage
+      options:
+        - "01-problem-identification"
+        - "02-market-validation"
+        - "03-customer-discovery"
+        - "04-ai-use-case-design"
+        - "05-business-model-selection"
+        - "06-offer-design"
+        - "07-mvp-planning"
+        - "08-technical-stack"
+        - "09-pricing-strategy"
+        - "10-go-to-market"
+        - "11-distribution-channels"
+        - "12-delivery-operations"
+        - "13-risk-compliance"
+        - "14-growth-iteration"
+        - "15-scaling"
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcomes
+    attributes:
+      label: Outcomes / lessons learned
+      description: What happened? Include honest data — failures count too.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: This example does not use misleading income claims
+          required: true
+        - label: Outcome data is honest
+          required: true
