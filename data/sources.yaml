@@ -1,21 +1,98 @@
+# Sources used for automated business blueprint discovery
+# Fields:
+#   type: github | hn | reddit | producthunt | web | newsletter
+#   status: active | candidate | paused
+#   search_query: used directly in GitHub/HN API calls
+#   url: for web type sources
+#   frequency: daily | weekly
+#   added_at: ISO date
 sources:
-  github_trending:
+  github_ai_business:
     type: github
-    description: GitHub trending AI business tools
-    frequency: weekly
+    description: GitHub repos — AI business frameworks and guides
+    search_query: "ai business framework OR business model canvas ai OR llm business"
+    frequency: daily
+    status: active
+    added_at: "2026-05-01"
 
-  hacker_news:
-    type: hn
-    description: HN threads about AI business building
+  github_lean_startup:
+    type: github
+    description: Lean startup and business blueprint tools
+    search_query: "lean startup OR business blueprint OR go-to-market ai"
     frequency: weekly
+    status: active
+    added_at: "2026-05-26"
+
+  github_awesome_business:
+    type: github
+    description: Awesome business and entrepreneurship lists
+    search_query: "awesome business OR awesome entrepreneurship OR awesome startup tools"
+    frequency: weekly
+    status: active
+    added_at: "2026-05-26"
+
+  hn_show_business_tool:
+    type: hn
+    description: HN Show HN — business tools and frameworks
+    search_query: "Show HN business tool"
+    frequency: daily
+    status: active
+    added_at: "2026-05-01"
+
+  hn_ask_business:
+    type: hn
+    description: HN Ask HN — business building AI
+    search_query: "Ask HN AI business building"
+    frequency: weekly
+    status: active
+    added_at: "2026-05-26"
+
+  reddit_entrepreneur:
+    type: reddit
+    description: r/entrepreneur business frameworks and guides
+    subreddit: entrepreneur
+    url: "https://www.reddit.com/r/entrepreneur/search/?q=AI+business&sort=new"
+    frequency: weekly
+    status: active
+    added_at: "2026-05-01"
+
+  reddit_smallbusiness:
+    type: reddit
+    description: r/smallbusiness — AI tools for businesses
+    subreddit: smallbusiness
+    url: "https://www.reddit.com/r/smallbusiness/search/?q=AI&sort=new"
+    frequency: weekly
+    status: active
+    added_at: "2026-05-26"
+
+  producthunt:
+    type: producthunt
+    description: Product Hunt AI business tool launches
+    url: "https://www.producthunt.com/topics/artificial-intelligence"
+    frequency: weekly
+    status: active
+    added_at: "2026-05-01"
 
   indie_hackers:
     type: web
     description: Indie Hackers interviews and revenue stories
-    url: https://www.indiehackers.com
+    url: "https://www.indiehackers.com"
     frequency: weekly
+    status: active
+    added_at: "2026-05-01"
 
-  producthunt:
-    type: producthunt
-    description: Product Hunt AI business launches
+  strategyzer:
+    type: web
+    description: Strategyzer business model tools and guides
+    url: "https://www.strategyzer.com/resources"
     frequency: weekly
+    status: active
+    added_at: "2026-05-26"
+
+  firstround_review:
+    type: web
+    description: First Round Review — startup playbooks
+    url: "https://review.firstround.com"
+    frequency: weekly
+    status: active
+    added_at: "2026-05-26"
