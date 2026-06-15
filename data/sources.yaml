@@ -1,98 +1,104 @@
-# Sources used for automated business blueprint discovery
-# Fields:
-#   type: github | hn | reddit | producthunt | web | newsletter
-#   status: active | candidate | paused
-#   search_query: used directly in GitHub/HN API calls
-#   url: for web type sources
-#   frequency: daily | weekly
-#   added_at: ISO date
+# Sources for automated AI business blueprint discovery
+# discover_new_examples.py reads github/hn type sources with search_query.
+# Web sources are for manual review.
+#
+# Status: active | paused | candidate
+# Frequency: daily | weekly
+
 sources:
-  github_ai_business:
+
+  # ── GitHub API searches ───────────────────────────────────────────────────────
+
+  github_ai_business_tools:
     type: github
-    description: GitHub repos — AI business frameworks and guides
-    search_query: "ai business framework OR business model canvas ai OR llm business"
+    description: AI business frameworks, canvases, and planning tools
+    search_query: "ai business model OR business canvas ai OR go-to-market ai language:python"
     frequency: daily
     status: active
     added_at: "2026-05-01"
 
-  github_lean_startup:
+  github_lean_gtm:
     type: github
-    description: Lean startup and business blueprint tools
-    search_query: "lean startup OR business blueprint OR go-to-market ai"
+    description: Lean startup, GTM playbooks, and launch frameworks
+    search_query: "lean startup framework OR go to market playbook OR launch checklist ai"
     frequency: weekly
     status: active
     added_at: "2026-05-26"
+
+  github_ai_product_ops:
+    type: github
+    description: AI product operations and business process automation
+    search_query: "ai product management OR business process ai OR ops automation llm stars:>30"
+    frequency: daily
+    status: active
+    added_at: "2026-06-01"
 
   github_awesome_business:
     type: github
-    description: Awesome business and entrepreneurship lists
-    search_query: "awesome business OR awesome entrepreneurship OR awesome startup tools"
+    description: Awesome business and startup resource lists
+    search_query: "awesome entrepreneurship OR awesome business tools OR awesome startup playbook"
     frequency: weekly
     status: active
     added_at: "2026-05-26"
 
+  # ── Hacker News ───────────────────────────────────────────────────────────────
+
   hn_show_business_tool:
     type: hn
-    description: HN Show HN — business tools and frameworks
-    search_query: "Show HN business tool"
+    description: Show HN — business tools and AI workflows
+    search_query: "Show HN business tool AI"
     frequency: daily
     status: active
     added_at: "2026-05-01"
 
-  hn_ask_business:
+  hn_ask_business_ai:
     type: hn
-    description: HN Ask HN — business building AI
-    search_query: "Ask HN AI business building"
+    description: Ask HN — building a business with AI
+    search_query: "Ask HN building business AI"
     frequency: weekly
     status: active
     added_at: "2026-05-26"
 
-  reddit_entrepreneur:
-    type: reddit
-    description: r/entrepreneur business frameworks and guides
-    subreddit: entrepreneur
-    url: "https://www.reddit.com/r/entrepreneur/search/?q=AI+business&sort=new"
+  hn_founder_playbooks:
+    type: hn
+    description: HN threads on founder playbooks and launch strategies
+    search_query: "founder playbook launch strategy AI startup"
     frequency: weekly
     status: active
-    added_at: "2026-05-01"
+    added_at: "2026-06-01"
 
-  reddit_smallbusiness:
-    type: reddit
-    description: r/smallbusiness — AI tools for businesses
-    subreddit: smallbusiness
-    url: "https://www.reddit.com/r/smallbusiness/search/?q=AI&sort=new"
-    frequency: weekly
-    status: active
-    added_at: "2026-05-26"
+  # ── Web sources (manual review) ───────────────────────────────────────────────
 
-  producthunt:
-    type: producthunt
-    description: Product Hunt AI business tool launches
-    url: "https://www.producthunt.com/topics/artificial-intelligence"
-    frequency: weekly
-    status: active
-    added_at: "2026-05-01"
-
-  indie_hackers:
+  indie_hackers_interviews:
     type: web
-    description: Indie Hackers interviews and revenue stories
-    url: "https://www.indiehackers.com"
+    description: Indie Hackers interviews — real business blueprints from founders
+    url: "https://www.indiehackers.com/interviews/page/1"
     frequency: weekly
     status: active
     added_at: "2026-05-01"
-
-  strategyzer:
-    type: web
-    description: Strategyzer business model tools and guides
-    url: "https://www.strategyzer.com/resources"
-    frequency: weekly
-    status: active
-    added_at: "2026-05-26"
+    notes: Best qualitative source for real-world business blueprints
 
   firstround_review:
     type: web
-    description: First Round Review — startup playbooks
-    url: "https://review.firstround.com"
+    description: First Round Review — deep-dive founder playbooks
+    url: "https://review.firstround.com/library/"
     frequency: weekly
     status: active
     added_at: "2026-05-26"
+
+  lenny_newsletter:
+    type: web
+    description: Lenny Rachitsky newsletter — product and growth playbooks
+    url: "https://www.lennysnewsletter.com/archive"
+    frequency: weekly
+    status: active
+    added_at: "2026-06-01"
+
+  strategyzer_blog:
+    type: web
+    description: Strategyzer — business model innovation and canvases
+    url: "https://www.strategyzer.com/blog"
+    frequency: weekly
+    status: paused
+    added_at: "2026-05-26"
+    notes: Paused — infrequent updates; check manually once a month
