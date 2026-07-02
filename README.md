@@ -16,7 +16,7 @@ A structured, anti-hype methodology covering every stage of building an AI-power
 |:---:|:---:|:---:|:---:|
 | [Find your AI idea →](https://github.com/msdw/awesome-ai-idea-engine) | [Turn ideas into ventures →](https://github.com/msdw/awesome-ai-venture-playbook) | **You are here** | [Monetize your AI skills →](https://github.com/msdw/awesome-ai-monetization-playbook) |
 
-<p align="center"><a href="https://msdw.github.io/awesome-ai-hub/">🔗 See the full series & get weekly updates →</a></p>
+<p align="center"><a href="https://msdw.github.io/awesome-ai-hub/">🔗 See the full series & get weekly updates →</a> · <a href="WEEKLY.md">📅 This week's finds</a> · <a href="TOP10.md">🏆 Top 10</a></p>
 
 ---
 
