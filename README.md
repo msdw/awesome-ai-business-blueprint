@@ -10,9 +10,26 @@ A structured, anti-hype methodology covering every stage of building an AI-power
 
 ---
 
+## Awesome AI Builder Series
+
+| 💡 Idea Engine | 🚀 Venture Playbook | 🏗 Business Blueprint | 💰 Monetization Playbook |
+|:---:|:---:|:---:|:---:|
+| [Find your AI idea →](https://github.com/msdw/awesome-ai-idea-engine) | [Turn ideas into ventures →](https://github.com/msdw/awesome-ai-venture-playbook) | **You are here** | [Monetize your AI skills →](https://github.com/msdw/awesome-ai-monetization-playbook) |
+
+---
+
 ## Sponsored — Project of the Week
 
 > *This slot is available. [Learn how to sponsor →](SPONSORS.md)*
+
+---
+
+## Who This Is For
+
+Built for:
+- **AI entrepreneurs** — who need a complete, step-by-step framework to build a business, not just a product
+- **Consultants going independent** — structuring their AI offer and operations professionally
+- **Teams integrating AI** — applying a rigorous methodology to AI-driven transformation projects
 
 ---
 
@@ -69,6 +86,22 @@ A complete, practical business blueprint for AI builders. It includes:
 
 ---
 
+## Recommended Tools
+
+Tools used and recommended by AI business builders in this community:
+
+| Tool | What it's for |
+|---|---|
+| [Notion](https://www.notion.so) | AI Business Canvas, docs, client-facing materials |
+| [Airtable](https://airtable.com) | Customer tracking, pipeline, and operations |
+| [Miro](https://miro.com) | Canvas work, strategy sessions, and workshop facilitation |
+| [Cal.com](https://cal.com) | Open-source booking — customer interviews and sales calls |
+| [Stripe](https://stripe.com) | Payment infrastructure for your AI product or service |
+
+> Want your tool featured here? [See sponsorship options →](SPONSORS.md)
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for how to suggest an example, template, or resource.
@@ -80,6 +113,19 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for how to suggest an example, template, 
 ## Automated Updates
 
 Every Monday at 07:00 UTC, a GitHub Actions workflow discovers new AI business examples and resources and opens a pull request for human review.
+
+---
+
+## Work With Me
+
+These resources are free. If you want hands-on support applying them to your specific situation:
+
+| | |
+|---|---|
+| **Discovery Call** | 30-min conversation to assess where you are in the blueprint — [book a call →](mailto:mathurin.ache@advanthink.com?subject=Discovery%20Call%20from%20Awesome%20AI%20Business%20Blueprint) |
+| **Coaching** | 1:1 guidance through the 15 steps — [get in touch →](mailto:mathurin.ache@advanthink.com?subject=Coaching%20from%20Awesome%20AI%20Business%20Blueprint) |
+| **Consulting** | Hands-on consulting to build your AI business — [let's talk →](mailto:mathurin.ache@advanthink.com?subject=Consulting%20from%20Awesome%20AI%20Business%20Blueprint) |
+| **Training** | Team workshops on AI business design — [learn more →](mailto:mathurin.ache@advanthink.com?subject=Training%20from%20Awesome%20AI%20Business%20Blueprint) |
 
 ---
 
