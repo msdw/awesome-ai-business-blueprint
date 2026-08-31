@@ -509,3 +509,28 @@ examples:
       - product_management
     source: public
     status: accepted
+
+  - id: candidate_hn_49451495
+    name: 'Launch HN: Risklytics (YC S26) – Insurance brokerage for frontier tech companies'
+    description: 'From HN: Launch HN: Risklytics (YC S26) – Insurance brokerage for
+      frontier tech companies'
+    category: ai_saas
+    industries:
+    - software_dev
+    target_users:
+    - developer
+    blueprint_stage_relevance:
+    - step_10
+    business_model: subscription_saas
+    outcome: Candidate — needs review
+    lessons:
+    - Candidate — needs review
+    tags:
+    - b2b
+    source: https://www.risklytics.ai/
+    status: candidate
+    _meta:
+      points: 54
+      source: hacker_news
+      query: Ask HN building business AI
+      discovered_at: '2026-08-31T14:42:26.052930'
