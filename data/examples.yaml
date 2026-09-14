@@ -509,3 +509,28 @@ examples:
       - product_management
     source: public
     status: accepted
+
+  - id: candidate_hn_49630606
+    name: 'Show HN: Self-hosted company OS, Claude Code and Codex agents in departments'
+    description: 'From HN: Show HN: Self-hosted company OS, Claude Code and Codex agents
+      in departments'
+    category: ai_saas
+    industries:
+    - software_dev
+    target_users:
+    - developer
+    blueprint_stage_relevance:
+    - step_10
+    business_model: subscription_saas
+    outcome: Candidate — needs review
+    lessons:
+    - Candidate — needs review
+    tags:
+    - b2b
+    source: https://github.com/OtoDock/oto-dock
+    status: candidate
+    _meta:
+      points: 50
+      source: hacker_news
+      query: Show HN business tool AI
+      discovered_at: '2026-09-14T13:32:20.349425'
