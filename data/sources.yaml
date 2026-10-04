@@ -102,3 +102,14 @@ sources:
     status: paused
     added_at: "2026-05-26"
     notes: Paused — infrequent updates; check manually once a month
+
+  hn_49804931:
+    type: hn
+    description: 'Launch HN: Coverage Cat (YC S22) – Umbrella insurance via your personal
+      agent'
+    url: https://www.coveragecat.com/
+    found_by_query: best business building resources AI
+    frequency: weekly
+    status: candidate
+    points: 54
+    added_at: '2026-10-04'
