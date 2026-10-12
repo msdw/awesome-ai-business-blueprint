@@ -509,3 +509,27 @@ examples:
       - product_management
     source: public
     status: accepted
+
+  - id: candidate_hn_50039291
+    name: 'Ask HN: Do you want a router that has DD-WRT pre-installed?'
+    description: 'From HN: Ask HN: Do you want a router that has DD-WRT pre-installed?'
+    category: ai_saas
+    industries:
+    - software_dev
+    target_users:
+    - developer
+    blueprint_stage_relevance:
+    - step_10
+    business_model: subscription_saas
+    outcome: Candidate — needs review
+    lessons:
+    - Candidate — needs review
+    tags:
+    - b2b
+    source: https://news.ycombinator.com/item?id=50039291
+    status: candidate
+    _meta:
+      points: 109
+      source: hacker_news
+      query: Ask HN building business AI
+      discovered_at: '2026-10-12T16:22:31.621259'
