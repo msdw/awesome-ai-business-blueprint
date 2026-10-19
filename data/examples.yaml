@@ -509,3 +509,29 @@ examples:
       - product_management
     source: public
     status: accepted
+
+  - id: candidate_hn_50073471
+    name: 'Launch HN: Consus (YC F24) – LLM gateway for companies handling sensitive
+      data'
+    description: 'From HN: Launch HN: Consus (YC F24) – LLM gateway for companies handling
+      sensitive data'
+    category: ai_saas
+    industries:
+    - software_dev
+    target_users:
+    - developer
+    blueprint_stage_relevance:
+    - step_10
+    business_model: subscription_saas
+    outcome: Candidate — needs review
+    lessons:
+    - Candidate — needs review
+    tags:
+    - b2b
+    source: https://news.ycombinator.com/item?id=50073471
+    status: candidate
+    _meta:
+      points: 36
+      source: hacker_news
+      query: Show HN business tool AI
+      discovered_at: '2026-10-19T14:13:35.286584'
