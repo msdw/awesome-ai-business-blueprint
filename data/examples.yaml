@@ -509,3 +509,51 @@ examples:
       - product_management
     source: public
     status: accepted
+
+  - id: candidate_hn_50471281
+    name: 'Show HN: Kapso – Iterative learning from enterprise data'
+    description: 'From HN: Show HN: Kapso – Iterative learning from enterprise data'
+    category: ai_saas
+    industries:
+    - software_dev
+    target_users:
+    - developer
+    blueprint_stage_relevance:
+    - step_10
+    business_model: subscription_saas
+    outcome: Candidate — needs review
+    lessons:
+    - Candidate — needs review
+    tags:
+    - b2b
+    source: https://news.ycombinator.com/item?id=50471281
+    status: candidate
+    _meta:
+      points: 61
+      source: hacker_news
+      query: Show HN business tool AI
+      discovered_at: '2026-11-16T16:39:44.290824'
+  - id: candidate_hn_50455811
+    name: 'Launch HN: Pomerado (YC F26) – Turn any website into an MCP for agents'
+    description: 'From HN: Launch HN: Pomerado (YC F26) – Turn any website into an MCP
+      for agents'
+    category: ai_saas
+    industries:
+    - software_dev
+    target_users:
+    - developer
+    blueprint_stage_relevance:
+    - step_10
+    business_model: subscription_saas
+    outcome: Candidate — needs review
+    lessons:
+    - Candidate — needs review
+    tags:
+    - b2b
+    source: https://news.ycombinator.com/item?id=50455811
+    status: candidate
+    _meta:
+      points: 64
+      source: hacker_news
+      query: Show HN business tool AI
+      discovered_at: '2026-11-16T16:39:44.290848'
